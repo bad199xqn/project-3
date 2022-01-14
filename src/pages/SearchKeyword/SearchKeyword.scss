@@ -1,0 +1,80 @@
+#dropdown-toggle {
+    color: #495057 !important
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.text-underline:hover {
+    text-decoration: underline;
+}
+// viết response < 364px
+@media screen and (max-width:360px){
+    .responsefilter{
+        display: flex;
+        flex-direction: column;
+       .col{
+           max-width: 100%;
+           div{
+               .button-width-filter{
+                   width: 100%;
+               }
+           }
+       }
+       
+        
+    }
+    
+}
+// vieets reponse >1024
+@media screen and (min-width:1024px) {
+    .responsefilter{
+        display: flex;
+        flex-direction: column;
+        .col{
+            max-width: 50%;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            div{
+                .button-width-filter{
+                    width: 160px;
+                }
+            }
+        }
+     }
+}
+@media screen and (min-width:360px) and (max-width:990px){
+    .responsefilter{
+           
+       .col{ 
+           div{
+                display: grid;
+            grid-template-columns: 1fr 1fr;
+            .button-width-filter{
+                   width: 160px;
+               }
+           }
+       }
+       
+        
+    }
+    
+}
+//min660 max991 response-ipad
+@media screen and (min-width:768px)and(max-width:991px) {
+    .responsefilter{
+        .col{
+            div{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .button-width-filter{
+                    width: 160px;
+                 
+                }
+            }
+        }
+        
+         
+     }
+}

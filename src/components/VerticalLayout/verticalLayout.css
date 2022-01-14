@@ -1,0 +1,29 @@
+#popup-dk:hover {
+    background-color: #F8F8F8 !important;
+}
+
+.footer-fix {
+    bottom: -120px;
+    padding: 20px calc(24px / 2);
+    position: absolute;
+    right: 0;
+    color: #74788d;
+    left: 250px;
+    height: 180px;
+    background-color: #f2f2f5;
+}
+
+.foo-links {
+    display: inline-block;
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.foo-links > li > a {
+    color: #74788d;
+}
+
+.foo-links > li {
+    margin-bottom: 12px;
+}

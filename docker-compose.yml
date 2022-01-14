@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+        service:
+                tty: true
+                build: .
+                volumes:
+                        - ".:/code"
+                command: >
+                      sh -c  "yarn install && yarn build"
+                ports:
+                        - 8002:8002
+                deploy:
+                        replicas: 1
+                        resources:
+                                limits:
+                                        memory: 20000M
+                        restart_policy:
+                                condition: on-failure
+

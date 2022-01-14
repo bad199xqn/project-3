@@ -1,0 +1,193 @@
+@import "../../assets/scss/theme.scss";
+
+.apexcharts-canvas {
+  text {
+    fill: $text-muted !important;
+  }
+}
+
+.new-article-table-scrollbar {
+  height: 900px;
+}
+
+.hoverImages {
+  margin-top: 20px;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+}
+
+.hoverImages:hover {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+  .animate-trend:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+.animate-zoom {
+  transition: transform 0.2s ease-in-out; /* Animation */
+}
+
+.animate-zoom:hover {
+  transform: scale(
+    1.02
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.recommend-hover {
+  .recommend-reason {
+    pointer-events: none;
+    user-select: none;
+    background-color: #3e64ff;
+    color: #fff;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .recommend-summary {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &:hover {
+  //   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  //   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  // box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+  //   var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #3d64ff;
+
+    .recommend-reason {
+      background-color: #f0af19;
+    }
+
+    .recommend-text {
+      color: #fff;
+    }
+
+    .recommend-summary .recommend-summary-text {
+      color: #fff;
+    }
+
+    .recommend-summary .recommend-summary-text:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.tw-shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.tw-shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.tw-shadow-xl {
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.rotate-spin {
+  animation: mymove 3s linear infinite;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(80deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0 !important ;
+  opacity: 0;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+  opacity: 0;
+}
+
+.react-multi-carousel-list:hover {
+  .react-multiple-carousel__arrow--left {
+    opacity: 0.6;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    opacity: 0.6;
+  }
+}
+
+.modal-topic {
+  opacity: 0.5;
+}
+//   .modal-topic:hover {
+// opacity: 1;
+//   }
+
+// .apexcharts-bar-series.apexcharts-plot-series  .apexcharts-series path {
+//     clip-path: inset(0% 0% 0% 0% round 20px);
+// }
+
+// @media only screen and (max-width: 600px) {
+//     .new-article-table-scrollbar {
+//         height: 600px;
+//     }
+//   }
+
+//acive topic
+.active-topic {
+  background-color: #ffffff;
+  border-radius: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.vertical-topic {
+  background-color: #f5f6f8;
+  padding: 8px 5px;
+  border-radius: 0.2rem;
+}
+
+.skeleton-box {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  overflow: hidden;
+  background-color: #dddbdd;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(#fff, 0) 0,
+      rgba(#fff, 0.2) 20%,
+      rgba(#fff, 0.5) 60%,
+      rgba(#fff, 0)
+    );
+    animation: shimmer 2s infinite;
+    content: "";
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

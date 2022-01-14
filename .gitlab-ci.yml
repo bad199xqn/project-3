@@ -1,0 +1,27 @@
+build-job:
+  stage: build
+  tags:
+    - DeployNode
+  script:
+    - echo "Hi build"
+
+test-job:
+  stage: test
+  tags:
+    - DeployNode
+  script:
+    - echo "Hi test" 
+
+deploy-prod:
+  stage: deploy
+  tags:
+    - DeployNode
+  script:
+    - cd /home/administrator/vnalert-web-demo
+    - docker-compose down
+    - git pull
+    - yarn install
+    - docker-compose up -d --build
+  only:
+    - develop-2.2
+

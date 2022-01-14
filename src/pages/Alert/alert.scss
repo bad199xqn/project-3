@@ -1,0 +1,220 @@
+@import "../../assets/scss/theme.scss";
+
+.font-sf-12 {
+    font-family: 'SF Pro Text';
+    font-weight: '600';
+    font-size: '12px';
+    color: #111C36;
+}
+
+.font-sf-12-neu{
+    font-family: 'SF Pro Text';
+    font-weight: '600';
+    font-size: '12px';
+    color: #CFD2D7;
+}
+
+#dropdown-toggle {
+    color: #495057 !important
+}
+
+.borad-width {
+    min-width: 400px;
+}
+
+.alert-container {
+    position: fixed;
+    z-index: 2;
+    right: 36px;
+}
+
+// .dismissing-alert {
+//     position: fixed;
+// }
+
+@media (max-width: 1024px) {
+    .borad-width {
+        min-width: 300px;
+    }
+}
+
+.react-kanban-column > div:nth-of-type(2) {
+    max-height: 300px !important;
+    overflow-y: scroll;
+  }
+
+  .hide-alert {
+      display: none !important;
+  }
+
+  .show-alert {
+      display: block;
+  }
+
+  .show-more-item:hover {
+    background-color: #F8F8FB;
+  }
+
+
+  
+// css cho các button tạo cảnh báo khi co về màn hình nhỏ hơn 412px
+@media (max-width: 412px) {
+    .btn-alert{
+        display: block;
+    }
+}
+// responsive
+@media screen and(max-width:624px) {
+    // nhận cảnh báo quá
+    .grid-style{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        .button-2{
+        
+    }.button-3{
+            margin-top: 0.8rem !important;
+        }
+    }
+    //chủ đề
+    .grid-style-theme{
+       
+    }
+    // nguồn tin 
+    .grid-style-resource{
+
+    }
+}
+//
+@media screen and(max-width:377px) {
+    .grid-style{
+        display: grid;
+        grid-template-columns: 1fr!important;
+        .button-2{
+        margin-top: 0.8rem !important;
+        
+    }.button-3{
+            margin-top: 0.14rem !important;
+        }
+    }
+    
+}
+// nhận cảnh báo
+.grid-style{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.8rem;
+    
+}
+
+/// chủ đề
+.grid-style-theme{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  gap: 0.8rem;     
+}
+/// nguồn tin
+.grid-style-resource{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    gap: 0.8rem;
+}
+// responsive
+ @media screen and(max-width:1496px) {
+    //  chủ đề
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important ;
+        gap: 0.8rem;     
+      }
+     
+ }
+ //
+ @media screen and(max-width:1278px) {
+     //chủ đề
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important ;
+        gap: 0.8rem;     
+      }
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important;    
+        gap: 0.8rem;
+    }
+
+ }
+ //
+ @media screen and (max-width:1043px) {
+       //chủ đề
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr  !important ;
+        gap: 0.8rem;     
+      }
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;    
+        gap: 0.8rem;
+    }
+ }
+ @media screen and (max-width:991px) {
+          //chủ đề
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important ;
+        gap: 0.8rem;     
+      }
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  !important;    
+        gap: 0.8rem;
+    }
+ }
+ //
+ @media screen and (max-width:615px) {
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr  !important ;
+        gap: 0.8rem;     
+      }
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;    
+        gap: 0.8rem;
+    }
+ }
+//
+@media screen and (max-width:405px) {
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr !important;    
+        gap: 0.8rem;
+    }
+}
+// 
+@media screen and(max-width:367px) {
+    .grid-style-theme{
+        display: grid;
+        grid-template-columns: 1fr  !important ;
+        gap: 0.8rem;     
+      }
+      // nguồn tin
+      .grid-style-resource{
+        display: grid;
+        grid-template-columns: 1fr !important;    
+        gap: 0.8rem;
+    }
+}
+
+
+
+.select2-container {
+    .custom-control{
+        z-index: 0;
+    }
+}
